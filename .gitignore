@@ -1,0 +1,10 @@
+node_modules
+.next
+dist
+.env
+.env.local
+*.log
+
+database/mongo_data
+database/.mongo
+

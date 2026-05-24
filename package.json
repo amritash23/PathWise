@@ -1,0 +1,13 @@
+{
+  "name": "pathwise",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n frontend,backend,ai -c cyan,green,magenta \"npm --prefix frontend run dev\" \"npm --prefix backend run dev\" \"npm --prefix ai-engine run dev\"",
+    "seed": "npm --prefix backend run seed",
+    "build": "npm --prefix backend run build && npm --prefix ai-engine run build && npm --prefix frontend run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
+
